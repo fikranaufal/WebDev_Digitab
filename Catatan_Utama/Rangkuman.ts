@@ -278,3 +278,8 @@ while (i<5) {
   i++;
 }; // While (perbedaan utamanya dengan for yaitu jika kita tidak mengetahui ada berapa iterasi maka lakukan dengan while)
 
+do {
+  console.log(`Angka ke-${i} adalah ${i}.`);
+  i++;
+} while (i < 5); // Perbedaan dengan while yaitu dia akan mengecek apa yang harus dilakukan baru di cek kondisinya apakah memenuhi atau tidak
+

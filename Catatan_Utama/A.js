@@ -29,7 +29,7 @@ function getUserName(user) {
 ;
 var peserta = {
     name: "Fikran",
-    class: 1,
+    class: "K01",
     age: 21,
     condition: true
 };
