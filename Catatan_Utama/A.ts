@@ -26,7 +26,7 @@ function sumArray(arr:Array<number>): number{
 console.log(`Jumlah array: ${sumArray([1,2,3,4,5])}`);
 
 // 2.
-function getUserName(user: any): string | number | boolean{
+function getUserName(user: {name:string}): string | number | boolean{
     return user.name;
 };
 
