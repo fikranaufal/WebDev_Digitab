@@ -283,3 +283,19 @@ do {
   i++;
 } while (i < 5); // Perbedaan dengan while yaitu dia akan mengecek apa yang harus dilakukan baru di cek kondisinya apakah memenuhi atau tidak
 
+// Ada dua control statement yaitu break dan continue
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    break;
+  }
+
+  console.log(i);
+} // Berikut merupakan contoh dari penggunaan break 
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+      continue;
+  }
+  console.log(i);
+} // Berikut merupakan contoh dari penggunaan continue
