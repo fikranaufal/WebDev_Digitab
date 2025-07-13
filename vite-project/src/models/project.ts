@@ -3,13 +3,15 @@ import projects from "../projects.json"
 import { Task } from "../abstract"
 import { generateId } from "../utilities";
 
-export class Project{
+export class Project extends Task{
     public id: number;
     public name: string;
     public status: ProjectStatus;
     public manHour: number;
 
     constructor(data:Project){
+        super();
+
         this.id=data.id;
         this.name=data.name;
         this.status=data.status;
@@ -21,6 +23,17 @@ export class Project{
             id: generateId(),
             task 
         }
+
+        this._tasks.push(newtask)
+    }
+
+    public update(taskId: string, task: string) {
+        const currentTask = this.findById(taskId);
+        if (currentTask) {
+            currentTask.task = task;
+        }
+
+        throw Error("task not found")
     }
 }
 
