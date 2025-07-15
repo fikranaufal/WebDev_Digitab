@@ -291,11 +291,25 @@ for (let i = 0; i < 10; i++) {
   }
 
   console.log(i);
-} // Berikut merupakan contoh dari penggunaan break 
+} // Diatas merupakan contoh dari penggunaan break 
 
 for (let i = 0; i < 10; i++) {
   if (i === 5) {
       continue;
   }
   console.log(i);
-} // Berikut merupakan contoh dari penggunaan continue
+} // Diatas merupakan contoh dari penggunaan continue
+
+// Selanjutnya kita akan membahas menggenai Error Handling 
+
+throw new Error("Ini Error!"); // Ini merupakan syntax dasar dari pembuatan peringatan error muncul
+
+try {
+  console.log('Memulai program');
+  console.log('Mengakhiri program');
+} catch (err) {
+  console.log('Karena tidak ada error, blok ini akan diabaikan');
+} finally {
+  console.log('Ini finally blok') 
+} // Code diatas merupakan contoh dari penerapan try catch dan finally yang secara umum digunakan untuk mencoba membangkitkan error
+
