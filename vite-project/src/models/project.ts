@@ -10,7 +10,7 @@ export class Project extends Task{
     public manHour: number;
 
     constructor(data:Project){
-        super();
+        super(data.id);
 
         this.id=data.id;
         this.name=data.name;
