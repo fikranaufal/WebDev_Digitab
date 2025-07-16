@@ -313,3 +313,4 @@ try {
   console.log('Ini finally blok') 
 } // Code diatas merupakan contoh dari penerapan try catch dan finally yang secara umum digunakan untuk mencoba membangkitkan error
 
+// Selanjutnya kita akan membahas mengenai Modularisasi 

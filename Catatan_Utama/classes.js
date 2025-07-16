@@ -28,7 +28,7 @@ var User = /** @class */ (function () {
         // birthday
         set: function (birthday) {
             if (birthday >= 2003) {
-                console.error;
+                throw new Error("Umur minimal 22 tahun");
             }
         },
         enumerable: false,
@@ -38,3 +38,8 @@ var User = /** @class */ (function () {
 }());
 var user1 = new User("fikranaufal", "Fikran", "Naufal", "fikran.naufal@gmail.com", new Date("2004-07-13"));
 console.log(user1);
+// getter dan setter
+console.log("Nama lengkap: ".concat(user1.fullName));
+console.log("Umur: ".concat(user1.age));
+console.log("Email: ".concat(user1.email));
+console.log("Birthday: ".concat(user1.Birthday));

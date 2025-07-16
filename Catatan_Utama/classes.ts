@@ -37,7 +37,7 @@ class User {
     // birthday
     set Birthday(birthday: number) {
         if (birthday>=2003) {
-            console.error;
+            throw new Error("Umur minimal 22 tahun");
         }
     }
 }
@@ -50,10 +50,11 @@ const user1 = new User(
     new Date("2004-07-13"),
 )
 
-console.log(user1)
+console.log(user1);
 
 
 // getter dan setter
-console.log(`Nama lengkap: ${user1.fullname}`)
-
-
+console.log(`Nama lengkap: ${user1.fullName}`);
+console.log(`Umur: ${user1.age}`);
+console.log(`Email: ${user1.email}`);
+console.log(`Birthday: ${user1.Birthday}`);
