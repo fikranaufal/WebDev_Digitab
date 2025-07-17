@@ -35,11 +35,13 @@ class User {
 
     // Setter
     // birthday
-    set Birthday(birthday: number) {
-        if (birthday>=2003) {
-            throw new Error("Umur minimal 22 tahun");
-        }
-    }
+    //set Birthday(birthday: Date) {
+        //if (birthday>= ) {
+          //  throw new Error("Umur minimal 22 tahun");
+        //} else {
+           // console.log(this.birthday);
+        //}
+    //}
 }
 
 const user1 = new User(
@@ -50,11 +52,13 @@ const user1 = new User(
     new Date("2004-07-13"),
 )
 
-console.log(user1);
-
+// console.log(user1);
 
 // getter dan setter
 console.log(`Nama lengkap: ${user1.fullName}`);
 console.log(`Umur: ${user1.age}`);
 console.log(`Email: ${user1.email}`);
-console.log(`Birthday: ${user1.Birthday}`);
+//console.log(`Birthday: ${user1.Birthday}`);
+//user1.Birthday = 2000;
+console.log(`Tahun Birthday terbaru: ${user1.birthday}`);
+console.log(typeof Date);
