@@ -26,7 +26,7 @@ class User {
     // Getter
     // fullName
     get fullName(): string {
-        return this.firstName + " " + this.lastName
+        return this.firstName + " " + this.lastName;
     }
     // age
     get age() {
@@ -35,13 +35,13 @@ class User {
 
     // Setter
     // birthday
-    //set Birthday(birthday: Date) {
-        //if (birthday>= ) {
-          //  throw new Error("Umur minimal 22 tahun");
-        //} else {
-           // console.log(this.birthday);
-        //}
-    //}
+    set baruBirthday(birthday: number) {
+        if (birthday >= 2003) {
+            throw new Error("Umur minimal 22 tahun");
+        } else {
+            console.log(this.birthday);
+        }
+    }
 }
 
 const user1 = new User(
@@ -61,4 +61,4 @@ console.log(`Email: ${user1.email}`);
 //console.log(`Birthday: ${user1.Birthday}`);
 //user1.Birthday = 2000;
 console.log(`Tahun Birthday terbaru: ${user1.birthday}`);
-console.log(typeof Date);
+//console.log(typeof Date);
